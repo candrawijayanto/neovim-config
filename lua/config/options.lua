@@ -11,7 +11,7 @@ opt.shiftwidth = 4
 opt.softtabstop = 4
 
 opt.formatoptions = "jqlnt"
-opt.formatoptions:remove({ "c", "r", "o" })
+-- opt.formatoptions:remove({ "c", "r", "o" })
 opt.undofile = false
 
 print("Hello from options.lua!")
