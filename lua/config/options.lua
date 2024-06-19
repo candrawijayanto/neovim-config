@@ -14,4 +14,6 @@ opt.formatoptions = "jqlnt"
 -- opt.formatoptions:remove({ "c", "r", "o" })
 opt.undofile = false
 
+vim.g.autoformat = false
+
 print("Hello from options.lua!")
