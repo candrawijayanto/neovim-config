@@ -15,9 +15,13 @@ vim.keymap.set("n", "[<Space>", ':<C-u>put!=repeat(nr2char(10),v:count)|execute 
 vim.keymap.set("n", "zh", "10zh", remap_opt)
 vim.keymap.set("n", "zl", "10zl", remap_opt)
 
-
 -- Remap Ctrl + y to scroll up one line in insert mode
-vim.api.nvim_set_keymap('i', '<C-y>', '<C-o><C-y>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<C-y>", "<C-o><C-y>", { noremap = true, silent = true })
 
 -- Remap Ctrl + e to scroll down one line in insert mode
-vim.api.nvim_set_keymap('i', '<C-e>', '<C-o><C-e>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<C-e>", "<C-o><C-e>", { noremap = true, silent = true })
+
+-- unutk hop.nvim
+vim.api.nvim_set_keymap("n", "s", ":HopWord<CR>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", "<C-s>", ":HopPattern<CR>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("i", "<C-s>", "<Esc>:HopPattern<CR>", { noremap = true, silent = true })
